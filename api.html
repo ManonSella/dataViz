@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="img/logo.jpg" type="image/png"> -->
+    <title>MHM Projet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="apiGenerale.css">
+    <link rel="stylesheet" href="apiFilms.css">
+    <link rel="stylesheet" href="apiCitations.css">
+    <link rel="stylesheet" href="apiRecettes.css">
+    <script src="apiGenerale.js" defer></script>
+    <script src="apiRecettes.js" defer></script>
+    <script src="apiFilms.js" defer></script>
+    <script src="apiCitations.js" defer></script>
+      
+</head>
+<div class="container">
+    <button id="darkModeToggle">Dark Mode</button>
+</div>
+<body>
+    <div id="popupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <img src="img/Cute Collage Pancake Instagram Story.png" alt="Popup Image" class="popup-image">
+            <button id="okButton">OK</button>
+        </div>
+    </div>
+<div class="navbar">
+    <video id="myVideo" src="video/Black White Modern Monochrome Name Initial Logo.mp4" type="video/mp4" muted playsinline preload="auto" width="100px" height="100px" autoplay loop></video>
+    <div class="navbar-title">Infinite Inspirations</div>
+    <div class="dropdown">
+        <button class="dropButton" >Category</button>
+        <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="quotes.html">Quotes</a>
+            <a href="films.html">Films</a>
+            <a href="recettes.html">Recipes</a>
+        </div>
+    </div>
+</div>
+<div id="main-content">
+    <div id="quotes">
+        <h2>Quotes</h2>
+        <div class="quoteContainer">
+        <div id="quote"></div>
+        </div>
+        <button id="buttonRandomQuote">Random Quote</button> 
+    </div>
+
+    <div id="films">
+        <nav>
+            <div class="search">
+                <input type="text" id="movie-name" placeholder="Entrez le nom du film" value="Black Panther">
+                <button id="search-btn">Search</button>
+            </div>
+        </nav>
+        <section id="result"></section>
+        <div id="word-cloud-title" style="display:none;"></div>
+        <div id="word-cloud" style="display:none;"></div>
+    </div>
+    
+
+    <div id="recipes">
+        <button id="recipeButton">Click to get a recipe</button>
+        <h2 id="recipeTitle"> Recipe of the day</h2>
+       <div class="repasTemplate" style="display: block;">
+        <p class="repasParagraph"> Step into a world where every meal is an adventure waiting to be savored. Our recipe collection is a tapestry of tastes, weaving together the vibrant flavors and rich traditions of cuisines from around the world.</p>
+        <div class="imageRepas"> <img src="img/repas2.avif" alt="repas"></div>
+        </div>
+       <div id="recipeName" ></div>
+       <div id="recipeType"></div>
+       <div id="recipeOrigin"></div>
+        <div id="image"></div>
+        <div id="instruction"></div>
+        <button id="nextStepButton" style="display: none;">Next Step</button>
+          </div>
+</div>
+    
+<footer class="footer">
+    <a href="https://github.com/adatechschool/projet-collectif-dataviz-projet-api-mhm"><i class="fa fa-github"></i></a>
+    <p>&copy; 2024 MHM. All rights reserved.</p>
+</footer>
+</body>
+</html>
